@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Arvabil Design Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Contact Cards Row Layout */
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin: 30px 0;
+}
+
+.card {
+  flex: 1 1 220px;
+  max-width: 300px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ✅ Card Icons Size Increased */
+.card .icon {
+  font-size: 2.9rem;       /* ✅ Icon size बड़ा कर दिया गया है */
+  display: block;
+  margin-bottom: 10px;
+}
+
+    /* Form Column Layout */
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      font-size: 1rem;
+      font-weight: normal;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-section button {
+      font-size: 1rem;
+      font-weight: normal;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-tagline{
+      margin-left: 15%;
+    }
+
+    /* Map Styles Already Correct (if you have in style.css) */
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">  
+    <div class="container">
+      <a href="index.html" class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo-img" />
+        <span class="brand-name">Arvabil Design Studio</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Stylish Contact Section -->
+  <section class="contact-modern">
+    <div class="contact-wrapper">
+      <h1>Let’s Create Something Great</h1>
+      <p class="contact-tagline">  We’re happy to collaborate, build, and discuss your vision. Reach us directly below.</p>
+
+      <!-- Contact Cards -->
+<div class="contact-cards">
+  <div class="card">
+    <span class="icon">📞</span>
+    <h3>Call</h3>
+    <p>+91 9824008557</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">✉️</span>
+    <h3>Email</h3>
+    <p>arvabilinfo@gmail.com</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">🔗</span>
+    <h3>Socials</h3>
+    <p>
+      <a href="https://www.instagram.com/arvabil_design_studio" target="_blank">Instagram</a><br>
+      <a href="https://youtube.com/@arvabildesignstudio" target="_blank">YouTube</a><br>
+      <a href="https://in.pinterest.com/arvabil_design_studio" target="_blank">Pinterest</a><br>
+      <a href="https://www.linkedin.com/company/arvabil/" target="_blank">LinkedIn</a>
+    </p>
+    </div>
+</div>
+ <!-- Google Maps Section -->
+      <div class="map-section">
+        <h2>Visit Our Offices</h2>
+        <div class="maps-wrapper">
+
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.0043907698337!2d72.3991774!3d23.6124931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c41865913a187%3A0x12bcce169b823c7a!2sArvabil%20Design%20Studio%20(Mahesana)!5e0!3m2!1sen!2sin!4v1720684400000!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Arvabil Office (Mehsana)</h3>
+          </div>
+
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.408151679809!2d72.5095889!3d22.9926229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b62335eabb5%3A0xc30eff4d27241ca2!2sArvabil%20Design%20Studio%20(Ahmedabad)!5e0!3m2!1sen!2sin!4v1720684405000!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Arvabil Studio (Ahmedabad)</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="form-section">
+        <h2>Send a Message</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Contact Number" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/919824008557" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
+</body>
+</html>
