@@ -749,7 +749,7 @@ html, body {
   }
 }
 
-/* Extra small devices */
+ /* Extra small devices */
 @media screen and (max-width: 320px) {
   .hero-tagline {
     font-size: 1.2rem;
@@ -771,3 +771,14 @@ html, body {
     height: 250px;
   }
 }
+
+/* ===== Fix for Justified Text Spacing in Mobile ===== */
+@media screen and (max-width: 768px) {
+  .about-page p,
+  .about-page ul,
+  .about-page ul li {
+    text-align: left !important;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  }
