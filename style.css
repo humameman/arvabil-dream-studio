@@ -146,17 +146,12 @@ p, li {
 .hero-slider {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Full screen height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   overflow: hidden;
 }
 
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -166,16 +161,14 @@ p, li {
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* image proportion maintain karke poora cover karegi */
-  object-position: center; /* image ka center focus me rahega */
-  display: block;
+  object-fit: cover;
 }
 
 .hero-tagline {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
@@ -183,6 +176,7 @@ p, li {
   text-align: center;
   opacity: 0;
   animation: taglineFade 50s infinite;
+  white-space: nowrap;
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
   padding: 0 20px;
 }
@@ -755,7 +749,7 @@ html, body {
   }
 }
 
- /* Extra small devices */
+/* Extra small devices */
 @media screen and (max-width: 320px) {
   .hero-tagline {
     font-size: 1.2rem;
@@ -777,14 +771,3 @@ html, body {
     height: 250px;
   }
 }
-
-/* ===== Fix for Justified Text Spacing in Mobile ===== */
-@media screen and (max-width: 768px) {
-  .about-page p,
-  .about-page ul,
-  .about-page ul li {
-    text-align: left !important;
-    word-spacing: normal;
-    letter-spacing: normal;
-  }
-  }
